@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+u{
+    color: #ff7300;
+}
+.a{
+    color: #ff7300;
+    text-decoration: none;
+}
+.a:hover{
+    color: #69410d;
+}
+.a-but{
+    color: #fff;
+    text-decoration: none;
+}
+.p{
+    color: #fff;
+}
+.parag{
+    font-size: 12px;
+    padding-bottom: 65px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#0303034d;
+    
+}
+.login{
+    background: rgba(0, 0, 0,.5);
+    border-radius: 4%;
+    width: 400px;
+    padding: 40px;
+    box-shadow: 3px 3px 1px 0px #000000af;
+    
+}
+.login h1{
+    margin-bottom: 45px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+}
+.box-user{
+    position: relative;
+
+}
+.esqSenha{
+    text-align: center;
+}
+.cadastro{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.login .box-user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 60px;
+    transition:all .55s ease-out;
+}
+.login .box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition:all .5s ease-out;
+    border-radius: 0;
+}
+.login .box-user input:focus + label,
+.login .box-user input:valid + label{
+    top: -24px;
+    left: 0;
+    color: #03011d;
+    font-size: 20px;
+}
+
+
+input:focus{
+    border-bottom: 2px solid #520303;
+    box-shadow: 0 1px 0 0 #ff0404;
+}
+input:focus + label{
+    transform: translateY(-17px) scale(.9);
+    color: #000000;
+    font-weight: bold;
+}
+input:not(:placeholder-shown) + lebol{
+    transform: translateY(-17px);
+    color: #000000;
+    font-weight: bold;
+}
+input:not(:placeholder-shown){
+    border-bottom: 2px solid #4b0000;
+    box-shadow: 0 1px 0 0 #ff0404;
+}
+input::placeholder{
+    color: transparent;
+}
+button{
+    padding: 15px 50px;
+    margin: 20px;
+    background-color: #ff6106;
+    border: 2px solid #682a06;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out .20s;
+}
+button:hover{
+    background: #ff8901;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+}
+.center{
+    text-align: center;
+}
+u:hover{
+    color: #69410d;
+}
