@@ -1,82 +1,84 @@
-:root{
-    --color-white: #fff;
-    --color-red:#e63636;
-    --color-dark1:#181818;
-    --color-dark2:#1e1e1e;
-    --color-purple1:#9333FF;
-    --color-purple2:indigo;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#0303034d;
-    color:var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.content{
-    background: rgba(0, 0, 0,.5);
+.cadastro{
+    margin: 5vh;
+    background: rgba(116,197,255, 1);
     padding: 2rem;
-    border-radius: 10px;
-    min-width: 30%;
-    overflow: auto;
+    border-radius: 20px;
+    position: relative;
 }
-input:hover {
-color: #e63636;
 
+.x{
+    background-color: red;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-a{
+
+.a-x{
     text-decoration: none;
-}
-a:hover{
-    color: #69410d;
-}
-.content img{
-    margin: auto;
-    padding: 38%;
-    
-}
-h1{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
-    margin-bottom: 10%;
-    text-align: center;
-}
-.content form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.span-required{
-    display: none;
     color: #fff;
+    display: flex;
+    justify-content: center;
+}
 
+h1{
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
-.genero{
-    font-size: large;
-    color: #181818;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
-}
-.inputs{
+
+.dados input{
     padding: 8px 5px;
+    margin: 0.5rem 0;
     outline: none;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.384);
-    border: 2px solid #1818188f;
-    color: var(--color-white);
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(73, 79, 107);
+    color: white;
     width: 100%;
-    box-sizing: border-box;
 }
 
-button{
-    width:100%;
-    height: 47px;
-    background: #ff7300;
+.dados input::placeholder{
+    color: white;
+}
+
+.box-select-genero{
+    color: white;
+}
+
+.box-select-perfil{
+    color: white;
+    margin: 1rem 0;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+}
+
+.enviar button{
+    width:80%;
+    height: 7vh;
+    background-color: #565656;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -85,15 +87,14 @@ button{
     cursor: pointer;
     font-size: 16px;
 }
-button:hover{
-    background: #69410d;
-    border: 1px solid #00000093;
 
-}
-a{
-    color: #ff7300;
+.enviar button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-@media screen and(max-width: 768px) {
-    
+.login{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
